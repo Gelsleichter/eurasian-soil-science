@@ -8,8 +8,6 @@
     <link href="http://www.zotero.org/styles/eurasian-soil-science" rel="self"/>  
     <link href="https://link.springer.com/journal/11475" rel="documentation"/>
     <link href="https://link.springer.com/journal/11475/submission-guidelines" rel="documentation"/>
-    <issn>1064-2293</issn>
-    <eissn>1556-195X</eissn>
     <contributor>
       <name>Gelsleichter, Yuri</name>
       <email>gelsleichter.yuri.andrei@uni-mate.hu</email>
@@ -17,6 +15,8 @@
     <category citation-format="numeric"/>
     <category field="Agronomy"/>
     <category field="Earth Sciences"/>
+    <issn>1064-2293</issn>
+    <eissn>1556-195X</eissn>
     <summary>Numeric, ordered author surname</summary>
     <updated>2025-03-26T13:22:29+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
