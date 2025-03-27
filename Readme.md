@@ -1,6 +1,6 @@
 # Eurasian Soil Science Citation Style
 
-This repository contains the [Citation Style Language (CSL)](https://citationstyles.org/) file for the [Eurasian Soil Science](https://link.springer.com/journal/11475) journal. The CSL file was derived from [Transactions of the Materials Research Society of Japan](http://www.zotero.org/styles/transactions-of-the-materials-research-society-of-japan) using the [Zotero CSL Editor](https://www.zotero.org/styles).
+This repository contains the [Citation Style Language (CSL)](https://citationstyles.org/) file for the [Eurasian Soil Science](https://link.springer.com/journal/11475) journal. The CSL file was derived from [Transactions of the Materials Research Society of Japan](http://www.zotero.org/styles/transactions-of-the-materials-research-society-of-japan) from [Zotero CSL repository](https://www.zotero.org/styles) using [citation styles editor](https://editor.citationstyles.org/about/).
 
 ## Usage
 
@@ -13,5 +13,5 @@ You can also use this CSL style in LaTeX projects when compiling with LuaLaTeX. 
 - [StackExchange: LuaLaTeX with CSL](https://tex.stackexchange.com/a/618815/223315)
 
 ## Installation
-- Download the CSL file from this repository.
+- Download the CSL file from this [repository](https://github.com/Gelsleichter/eurasian-soil-science/blob/main/eurasian-soil-science.csl).
 - Import it into your reference manager (e.g., Zotero) by following the software's instructions for adding custom styles.
