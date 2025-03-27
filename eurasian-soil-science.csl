@@ -5,9 +5,12 @@
     <title>Eurasian Soil Science</title>
     <title-short>ESS</title-short>
     <id>http://www.zotero.org/styles/eurasian-soil-science</id>
-    <link href="http://www.zotero.org/styles/eurasian-soil-science" rel="self"/>
+    <link href="http://www.zotero.org/styles/eurasian-soil-science" rel="self"/>  
+    <link href="https://link.springer.com/journal/11475" rel="documentation"/>
+    <link href="https://link.springer.com/journal/11475/submission-guidelines" rel="documentation"/>
     <contributor>
-      <name>Gelsleichter, Y.</name>
+      <name>Gelsleichter, Yuri</name>
+      <email>gelsleichter.yuri.andrei@uni-mate.hu</email>
     </contributor>
     <category citation-format="numeric"/>
     <category field="Agronomy"/>
