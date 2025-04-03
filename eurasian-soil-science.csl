@@ -1,15 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" and="text" demote-non-dropping-particle="never" default-locale="en-US">
-  <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
     <title>Eurasian Soil Science</title>
     <title-short>ESS</title-short>
     <id>http://www.zotero.org/styles/eurasian-soil-science</id>
-    <link href="http://www.zotero.org/styles/eurasian-soil-science" rel="self"/>  
-    <link href="https://link.springer.com/journal/11475" rel="documentation"/>
-    <link href="https://link.springer.com/journal/11475/submission-guidelines" rel="documentation"/>
+    <link href="http://www.zotero.org/styles/eurasian-soil-science" rel="self"/>
     <contributor>
-      <name>Gelsleichter, Yuri</name>
+      <name>Gelsleichter, Y.</name>
       <email>gelsleichter.yuri.andrei@uni-mate.hu</email>
     </contributor>
     <category citation-format="numeric"/>
@@ -18,16 +15,17 @@
     <issn>1064-2293</issn>
     <eissn>1556-195X</eissn>
     <summary>Numeric, ordered author surname</summary>
-    <updated>2025-03-26T13:22:29+00:00</updated>
+    <updated>2025-04-03T10:26:03+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
-    <link/>
+    <link href="https://link.springer.com/journal/11475"/>
+    <link href="https://link.springer.com/journal/11475/submission-guidelines"/>
   </info>
   <locale xml:lang="en-US">
     <style-options punctuation-in-quote="false"/>
   </locale>
   <macro name="author">
     <names variable="author">
-      <name and="text" initialize-with="."/>
+      <name and="text" et-al-min="6" et-al-use-first="4" initialize-with="."/>
       <label form="short" prefix=", "/>
       <substitute>
         <names variable="editor" font-weight="normal"/>
@@ -56,11 +54,15 @@
   <macro name="publisher">
     <text variable="publisher" prefix="(" suffix=", "/>
     <text variable="publisher-place" suffix=", "/>
-    <text macro="year-date" suffix="), "/>
+    <text macro="year-date" suffix=")"/>
     <group delimiter=" " suffix=" ">
-      <label plural="never" prefix="p" suffix=" " variable="page" form="short"/>
+      <choose>
+        <if match="any" locator="page">
+          <label plural="never" prefix="p" suffix=" " variable="page" form="short"/>
+          <text variable="page"/>
+        </if>
+      </choose>
     </group>
-    <text variable="page"/>
   </macro>
   <macro name="edition">
     <choose>
@@ -93,7 +95,7 @@
       <choose>
         <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
           <group delimiter=", ">
-            <text variable="title" quotes="true" font-style="normal"/>
+            <text variable="title" quotes="false" font-style="italic"/>
             <text macro="edition"/>
             <text macro="editor"/>
             <text variable="container-title" font-style="italic" font-weight="normal"/>
@@ -106,10 +108,10 @@
           </group>
         </if>
         <else-if type="chapter paper-conference" match="any">
-          <text variable="title" suffix=", "/>
+          <text variable="title" quotes="true" suffix=", "/>
           <text term="in" suffix=": "/>
+          <text variable="container-title" form="short" text-case="title" font-style="italic" suffix=", "/>
           <text macro="editor" suffix=", "/>
-          <text variable="container-title" form="short" text-case="title" suffix=", "/>
           <text macro="edition" suffix=", "/>
           <text macro="publisher"/>
         </else-if>
@@ -129,13 +131,20 @@
           </group>
         </else-if>
         <else-if type="webpage" match="any">
-          <group delimiter=", ">
-            <text variable="title"/>
-            <text variable="URL" suffix=" "/>
+          <group>
+            <text variable="title" suffix=", "/>
+            <text variable="URL" suffix=". "/>
+            <choose>
+              <if match="any" variable="accessed">
+                <text term="accessed" text-case="capitalize-first" suffix=" "/>
+                <date form="text" variable="accessed"/>
+              </if>
+            </choose>
           </group>
         </else-if>
         <else>
           <group>
+            <text variable="title" quotes="true" suffix=" "/>
             <text variable="container-title" form="short" text-case="title" strip-periods="false" font-style="normal" suffix=", "/>
             <text variable="volume" font-weight="bold" suffix=", "/>
             <text variable="page" form="short" suffix=" "/>
